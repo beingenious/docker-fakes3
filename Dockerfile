@@ -20,7 +20,7 @@ RUN apt-get install -y build-essential wget ruby2.0 ruby2.0-dev git
 
 # Install fakes3 with dependancies
 RUN gem2.0 install specific_install --no-rdoc --no-ri
-RUN gem2.0 specific_install -l https://github.com/jubos/fake-s3.git
+RUN gem2.0 specific_install -l https://github.com/benjaminbarbe/fake-s3.git
 
 # Fakes3 service
 RUN mkdir /etc/service/fakes3
