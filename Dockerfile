@@ -10,7 +10,7 @@ FROM ruby:2-alpine
 # Install fakes3 with dependancies
 RUN apk --update add --virtual build-dependencies git && \
     gem install --no-ri --no-rdoc specific_install && \
-    gem specific_install -l https://github.com/jubos/fake-s3.git && \
+    gem specific_install -l https://github.com/benjaminbarbe/fake-s3.git && \
     apk del build-dependencies
 
 # Attach volumes.
